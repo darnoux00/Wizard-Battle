@@ -3,6 +3,7 @@ import random
 print("wELCOME TO WIZARD BATTLE")
 gameselect = input("Would you like to play single-player mode or multiplayer mode? (s or m)").lower()
 
+#multiplayer mode
 if gameselect == "m":
    player1name = input("What is your name young wizard? ").capitalize()
    player2name = input("What is your name young wizard? ").capitalize()
@@ -57,7 +58,7 @@ if gameselect == "m":
             elif player2pick == "Fire":
                 print("You're spell was overpowered by", player2name, "you have taken damage!")
                 player1lives -1
-
+#singleplayer mode
 elif gameselect == "s":
     playername = input("What is your name young wizard? ").capitalize()
     wizards = ["Scrappy Spellmore","Twinkle Starwind","Chad Thundercast","Jafar Talithone","Lord Couldron"]
