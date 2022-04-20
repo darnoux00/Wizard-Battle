@@ -17,8 +17,8 @@ if gameselect == "m":
    player2pick = None
 
    while player1lives and player2lives != 0:
-       player1pick = input("Alright,",player1name,"cast your spell: Water, Fire, or Ice! ")
-       player2pick = input("Alright,",player2name,"cast your spell: Water, Fire, or Ice! ")
+        player1pick = input("Alright,",player1name,"cast your spell: Water, Fire, or Ice! ")
+        player2pick = input("Alright,",player2name,"cast your spell: Water, Fire, or Ice! ")
 
         if player1pick == "":
             print(player1name, "did not cast a spell")
@@ -58,8 +58,9 @@ if gameselect == "m":
             elif player2pick == "Fire":
                 print("You're spell was overpowered by", player2name, "you have taken damage!")
                 player1lives -1
+
 #singleplayer mode
-elif gameselect == "s":
+elif gameselect == "":
     playername = input("What is your name young wizard? ").capitalize()
     wizards = ["Scrappy Spellmore","Twinkle Starwind","Chad Thundercast","Jafar Talithone","Lord Couldron"]
     wizardname = random.choice(wizards)
